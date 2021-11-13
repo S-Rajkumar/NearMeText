@@ -1,0 +1,46 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <title>ShareClipboard</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+        <link rel="stylesheet" href="./css/index.css" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="jumbotron text-center">
+                    <h1 class="text-center">ShareClipboard</h1>
+                    <p>share your clipboard text / link with near devices</p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="alert alert-info" id="info" role="alert"></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <input type="text" class="form-control" id="qrtext" oninput="generateQR()" placeholder="type/paste text to generate QR" />
+                </div>
+            </div>
+            <div class="row">
+                <div id="qrcode"></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div id="qrscan"></div>
+            </div>
+            <div class="row">
+                <div class="alert alert-info" role="alert" id="qrscantext"></div>
+            </div>
+        </div>
+    </body>
+    <script src="./js/index.js" type="text/javascript"></script>
+    <script src="./js/html5-qrcode.min.js"></script>
+</html>

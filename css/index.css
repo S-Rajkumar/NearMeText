@@ -1,0 +1,11 @@
+#qrcode {
+    padding: 16px;
+}
+
+#qrcode img{
+    margin: 0 auto;
+}
+
+#qrscantext {
+    margin-top: 2%;
+}
